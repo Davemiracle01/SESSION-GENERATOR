@@ -28,13 +28,13 @@ const {
 } = require("node:fs/promises")
 router.get('/', async (req, res) => {
 	const id = makeid();
-	async function WASI_MD_QR_CODE() {
+	async function ASTA_BOT_QR_CODE() {
 		const {
 			state,
 			saveCreds
 		} = await useMultiFileAuthState('./temp/' + id)
 		try {
-			let Qr_Code_By_Wasi_Tech = Wasi_Tech({
+			let Qr_Code_By_Dave = Wasi_Tech({
 				auth: state,
 				printQRInTerminal: false,
 				logger: pino({
@@ -59,25 +59,17 @@ router.get('/', async (req, res) => {
 				   let session = await Qr_Code_By_Wasi_Tech.sendMessage(Qr_Code_By_Wasi_Tech.user.id, { text: '' + b64data });
 	
 				   let WASI_MD_TEXT = `
-*_Session Connected By Wasi Tech_*
-*_Made With 🤍_*
+*_ASTA BOT SESION ID CONNECTED SUCSESFULLY_*
+*_POWERD BY DAVE_*
 ______________________________________
-╔════◇
-║ *『AMAZING YOU'VE CHOSEN WASI MD』*
-║ _You Have Completed the First Step to Deploy a Whatsapp Bot._
-╚════════════════════════╝
-╔═════◇
-║  『••• 𝗩𝗶𝘀𝗶𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽 •••』
-║❒ *Ytube:* _youtube.com/@wasitech1
-║❒ *Owner:* _https://wa.me/message/THZ3I25BYZM2E1_
-║❒ *Repo:* _https://github.com/wasixd/WASI-MD_
-║❒ *WaGroup:* _https://chat.whatsapp.com/FF6YuOZTAVB6Lu65cnY5BN_
-║❒ *WaChannel:* _https://whatsapp.com/channel/0029VaDK8ZUDjiOhwFS1cP2j_
-║❒ *Plugins:* _https://github.com/Itxxwasi 
-╚════════════════════════╝
+Thank you for choosing Asta bot 
+You can contact me using
+║❒ WhatsApp 254114127157
+║❒ telegram https://t.me/DAVEMIRACLEBOT
+║❒ *WaChannel:* 
 _____________________________________
 	
-_Don't Forget To Give Star To My Repo_`
+`
 	 await Qr_Code_By_Wasi_Tech.sendMessage(Qr_Code_By_Wasi_Tech.user.id,{text:WASI_MD_TEXT},{quoted:session})
 
 
@@ -100,6 +92,6 @@ _Don't Forget To Give Star To My Repo_`
 			await removeFile("temp/" + id);
 		}
 	}
-	return await WASI_MD_QR_CODE()
+	return await ASTA_BOT_QR_CODE()
 });
 module.exports = router
