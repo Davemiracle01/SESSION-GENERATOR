@@ -66,7 +66,7 @@ Thank you for choosing Asta bot
 You can contact me using
 ║❒ WhatsApp 254114127157
 ║❒ telegram https://t.me/DAVEMIRACLEBOT
-║❒ *WaChannel:* https://github.com/Davemiracle01/ASTA-BOT
+║❒ *WaChannel:* https://whatsapp.com/channel/0029VavpWUvGk1Fkbzz0vz0v
 _____________________________________
 	
 `
